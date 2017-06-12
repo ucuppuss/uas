@@ -1,0 +1,10 @@
+@extends('buku.create')
+@section('editId',$item->id)
+@section('idbuku',$item->idbuku)
+@section('judulbuku',$item->judulbuku)
+@section('penulis',$item->penulis)
+@section('penerbit',$item->penerbit)
+@section('tahun',$item->tahun)
+@section('editMethod')
+  {{method_field('PUT')}}
+@endsection
